@@ -1,0 +1,21 @@
+{
+    "name": "InstaTime",
+    "version": "1.0.0",
+    "description": "InstaTime adds the exact time and date in your own local timezone to Instagram Web",
+    "permissions": ["scripting","storage","activeTab"],
+    "manifest_version": 3,
+    "author": "Rio",
+    "content_scripts": [
+        {
+            "matches": ["*://*.instagram.com/*"],
+            "js": ["script.js"]
+        }
+    ],
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "InstaTime"
+    },
+    "icons": {
+        "128": "logo.png"
+    }  
+}
